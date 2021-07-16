@@ -1,0 +1,95 @@
+body{
+	background-color: rgb(28, 170, 180);
+}
+
+.body {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: rgb(28, 170, 180);
+  color:rgb(8, 140, 150);
+  height: 90vh;
+}
+a{
+	color: aliceblue;
+}
+
+.header {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	font-size: x-large;
+	text-align: center;
+}
+
+.container{
+	margin: auto;
+	height: 80%;
+	width: 70%;
+	padding: 30px;
+	/*border: 2px solid white;*/
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	/*box-shadow: horizontal-offset vertical-offset blur-radius spread color inset*/
+	box-shadow: 12px 12px 12px rgba(0,0,0,0.35), -13px -8px 20px rgba(0,0,0,0.35);
+	background-color: white;
+}
+
+.mic_button {
+	cursor: pointer;
+	padding: 20px 50px; /* top-bottom sides */
+  	margin-top: 20px;
+  	margin-bottom: 20px;
+	font-size: 20px;
+	letter-spacing: 2px;
+	background: none;
+	border:none;
+	border-radius: 50%;
+  box-shadow: 7px 7px 9px rgba(0,0,0,0.35), -5px -4px 12px 0px rgba(0,0,0,0.35);
+}
+#submit{
+  background-color: rgb(95, 194, 201);
+}
+.mic_button:hover{
+	box-shadow:inset 7px 7px 10px rgba(0,0,0,0.35),inset -5px -5px 14px 0px rgba(0,0,0,0.35); 
+}
+#start-btn , #stop-btn, #print{
+    margin: 10px;
+    background-color: white;
+    color: rgb(28, 170, 180);
+    border: none;
+    border-bottom: 1px solid black;
+    transition: 0.3s;
+}
+#start-btn:hover , #stop-btn:hover{
+    font-size: 15px;
+    background-color: rgb(28, 170, 180);
+    color: white;   
+}
+input{
+    margin: 5px;    
+}
+input[type="submit"]{
+    margin-right: 20px;
+    width: 100px;
+    background: rgb(28, 170, 180);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+    transition: 0.5s;
+}
+input[type="submit"]:hover{
+    margin-right: 20px;
+    width: 100px;
+    background: white;
+    color: rgb(95, 194, 201);
+    border: 1px solid rgb(28, 170, 180);
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+}
+

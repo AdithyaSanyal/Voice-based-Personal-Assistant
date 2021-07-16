@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'output_page.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Question Generation</title>
+</head>
+<body>
+    <a href="/stt/"><i class="fa fa-home fa-3x" ></i></a>
+    <div class="body">
+        <div class="container">
+            <div class="header">
+                <h1 id="Feature-selected">Question generation</h1>
+            </div>
+            <form action="/question_generation_output/" method="POST">
+               {% csrf_token %}
+            <div id="pdf">   
+                <textarea rows="15" cols="125" name="question">{{ content }}</textarea>
+            </div>
+            <input type="submit" id="search">
+        </div>  
+    </form>
+    </div>
+    <script src="{% static 'output_page.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+.flaticon-microphone:before { content: "\f130"; }
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{font-family: 'times new roman';
+    background: rgb(28, 170, 180);
+    background-size: cover;
+}
+a{
+	color: aliceblue;
+}
+
+header {
+    height: 60px;
+    background: #fff;
+    color: #03283B;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    box-shadow: 0px 0 5px #b9b7b7;
+    width: 60%;
+    margin: auto;
+   
+    z-index: 2;
+    
+}
+.main {
+    width: 100%;
+    float: left;
+    margin-top: 60px;
+    padding: 30px 0;
+}
+.main button {
+    background: #03f7ff;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(75, 72, 72);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.main button:focus{outline: none;}
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+.user-area, .chatbot-area {
+    width: 20%;
+    height: calc(100vh - 60px);
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 80px;
+    z-index: 99999;
+}
+.chatbot-area {
+    float: right;
+    right: 80px;
+    left: auto;
+}
+.user-area img, .chatbot-area img {
+    margin-top: 200px;
+    width: 150px;
+    height: 150px;
+    
+}
+.user-area img{left: 0;}
+.chatarea-main {
+    width: 45%;
+    margin: 0 auto;
+    
+}
+.chatarea-outer {
+    width: 100%;
+    float: left;
+    
+}
+.chatbot-area .chatarea-main{float: left;}
+.chatarea.user {
+    float: right;
+    width: 40%;
+    padding: 20px 0;
+}
+
+.chatarea-inner {
+    float: left;
+    width: 60%;
+    padding: 10px;
+    color: #fff;
+    position: relative;
+    margin: 5px 0;
+}
+.chatarea-inner.user{
+    color : #20030a;
+    background: #ffadc2;
+    box-shadow: 0 0 40px#ff1f57;
+    margin: 10px;
+    color: #030c11;
+
+}
+.chatarea-inner.chatbot{
+    margin: 10px;
+    float: right;
+    color : #031321;
+    background: #99d1ff;
+    box-shadow: 0 0 40px #2196f3;
+    color: #030c11;
+}
+
+
+.chatbot-area .chatarea-inner{float: left;}
+
+

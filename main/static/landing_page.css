@@ -1,0 +1,68 @@
+body{
+	background-color: rgb(28, 170, 180);
+}
+
+.body {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: rgb(28, 170, 180);
+  color:rgb(8, 140, 150);
+  height: 90vh;
+}
+a{
+	color: aliceblue;
+}
+/* .main{
+  display: flex;
+  flex-direction: column; 
+  justify-content:flex-start;
+  align-items: center;
+  height: 70%;
+  width: 80%; 
+} */
+.header {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	font-size: x-large;
+	text-align: center;
+}
+.container{
+	margin: auto;
+	height: 80%;
+	width: 70%;
+	padding: 30px;
+	/*border: 2px solid white;*/
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	/*box-shadow: horizontal-offset vertical-offset blur-radius spread color inset*/
+	box-shadow: 12px 12px 12px rgba(0,0,0,0.35), -13px -8px 20px rgba(0,0,0,0.35);
+	background-color: white;
+}
+.bot{
+	align-items: center;
+	justify-content: center;
+}
+.mic_button {
+	cursor: pointer;
+	padding: 20px 60px; /* top-bottom sides */
+  	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 80px;
+	font-size: 20px;
+	letter-spacing: 2px;
+	background: none;
+	border:none;
+	border-radius: 50%;
+  box-shadow: 7px 7px 9px rgba(0,0,0,0.35), -5px -4px 12px 0px rgba(0,0,0,0.35);
+}
+#mic{
+  background-color: rgb(95, 194, 201);
+}
+.mic_button:hover{
+	box-shadow:inset 7px 7px 10px rgba(0,0,0,0.35),inset -5px -5px 14px 0px rgba(0,0,0,0.35); 
+}
+

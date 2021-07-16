@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'File_Upload_Page.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Text Summarizer</title>
+</head>
+<body>
+    <a href="/stt/"><i class="fa fa-home fa-3x" ></i></a>
+    <div class="body">
+        <div class="container">
+            <div class="formdiv">
+                <h1 id="Feature-selected">Text Summarizer</h1>
+                <h2 id="Feature-selected">Drag Your File Here</h2>
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/import-pdf-2.png" class="form_button"/>
+                
+                <form action="/text_summarizer_output/" method="POST" enctype = "multipart/form-data">
+                    {% csrf_token %}
+                    <br/>
+                    <input type="file" placeholder="" name="myfile" value="myfile"><br />
+                    <input type="submit" value="Submit" /> 
+                </form>
+            </div>    
+        </div>  
+    </div>
+</body>
+</html>

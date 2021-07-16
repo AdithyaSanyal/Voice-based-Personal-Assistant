@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'output_page.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Image Retrieval</title>
+  </head>
+  <body>
+    <a href="/stt/"><i class="fa fa-home fa-3x"></i></a>
+    <div class="body">
+      <div class="container">
+        <div class="header">
+          <h1 id="Feature-selected">Image retrieval</h1>
+        </div>
+        <div>
+          <form action="/text_retrieval_output/" method="POST">
+            {% csrf_token %}
+            <label for="text_1">Enter text here :</label><br/>
+            <br/>
+            <div class="contactForm">
+             
+              <input type="text" name="text" id="stt">
+              <input type='button' id="start-btn" title="Start" value="Start">
+              <input type='button' id="stop-btn" title="Stop" value="Stop">
+              <input type="submit" name="" value="Search" id='search'>
+            </div>
+            <p id="instructions">Press the Start button</p>   
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../static/stt.js"></script>
+</html>

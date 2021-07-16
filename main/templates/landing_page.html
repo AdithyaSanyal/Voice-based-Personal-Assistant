@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'landing_page.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <a href="/"><i class="fa fa-home fa-3x" ></i></a>
+    <div class="body">
+        <div class="container">
+            <div class="header">
+                <h1 id="Feature-selected">Welcome To Your Personal</h1>
+                <h1 id="Feature-selected">Voice Based Assistance</h1>
+            </div>
+            <div class="bot">
+                <h2 id="Feature-selected">Click the button below to open chatbot</h2>
+                <button class ="mic_button" type="button" id="mic"> 
+                    <a href="/stt/"><img src="https://img.icons8.com/material/100/000000/bot.png"/></a>
+                </button>
+            </div>
+        </div>    
+    </div>  
+</body>
+</html>
