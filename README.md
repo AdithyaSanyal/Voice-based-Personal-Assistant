@@ -3,6 +3,8 @@ A voice-based personal assistant built for students, by students to ease and str
 
 Here we aim to guide them through every stage of the learning process. 
 
+This figure explains the system architecture of our web application:
+https://lh6.googleusercontent.com/lgT6zS1sDvblWyetFcKjWRecRK9m5TUHXAwbpPO8lzmR_yGtupAJRkfHy6Wvym2p2xlEPkAEr2zae02E61F3JNZSrO01jV3UNaso18FVetnM7nLJhskBvtIgBK69zAAW5j3-sxKw
 Right from information retrieval to evaluation, we have them covered.
 
 It has different functionalities right from voice based text and image retrieval, a chatbot to a text summarizer and an automatic question generator. 
