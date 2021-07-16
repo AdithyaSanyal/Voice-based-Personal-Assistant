@@ -3,7 +3,7 @@ A voice-based personal assistant built for students, by students to ease and str
 
 Here we aim to guide them through every stage of the learning process. 
 
-This figure explains the system architecture of our web application:
+This figure explains the system architecture of the web application:
 ![System architecture](https://user-images.githubusercontent.com/61611259/125900212-dd4b5984-4fa4-41da-bfe3-f02ef89c74b0.png)
 
 Right from information retrieval to evaluation, we have them covered.
